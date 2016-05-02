@@ -1,4 +1,4 @@
-// Lauren
+//  This is a test
 //  ViewController.swift
 //  RareAnimal
 //
