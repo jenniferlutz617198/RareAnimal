@@ -1,4 +1,4 @@
-// Lauren
+// Lauren Zidek
 //  ViewController.swift
 //  RareAnimal
 //
