@@ -1,0 +1,507 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D7DA60F01CD7DC3D007AB21A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7DA60EF1CD7DC3D007AB21A /* AppDelegate.swift */; };
+		D7DA60F21CD7DC3D007AB21A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7DA60F11CD7DC3D007AB21A /* ViewController.swift */; };
+		D7DA60F51CD7DC3D007AB21A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7DA60F31CD7DC3D007AB21A /* Main.storyboard */; };
+		D7DA60F71CD7DC3D007AB21A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D7DA60F61CD7DC3D007AB21A /* Assets.xcassets */; };
+		D7DA60FA1CD7DC3D007AB21A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7DA60F81CD7DC3D007AB21A /* LaunchScreen.storyboard */; };
+		D7DA61051CD7DC3D007AB21A /* RareAnimalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7DA61041CD7DC3D007AB21A /* RareAnimalTests.swift */; };
+		D7DA61101CD7DC3D007AB21A /* RareAnimalUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7DA610F1CD7DC3D007AB21A /* RareAnimalUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D7DA61011CD7DC3D007AB21A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D7DA60E41CD7DC3C007AB21A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D7DA60EB1CD7DC3C007AB21A;
+			remoteInfo = RareAnimal;
+		};
+		D7DA610C1CD7DC3D007AB21A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D7DA60E41CD7DC3C007AB21A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D7DA60EB1CD7DC3C007AB21A;
+			remoteInfo = RareAnimal;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D7DA60EC1CD7DC3C007AB21A /* RareAnimal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RareAnimal.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D7DA60EF1CD7DC3D007AB21A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D7DA60F11CD7DC3D007AB21A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D7DA60F41CD7DC3D007AB21A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D7DA60F61CD7DC3D007AB21A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D7DA60F91CD7DC3D007AB21A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D7DA60FB1CD7DC3D007AB21A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D7DA61001CD7DC3D007AB21A /* RareAnimalTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RareAnimalTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D7DA61041CD7DC3D007AB21A /* RareAnimalTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RareAnimalTests.swift; sourceTree = "<group>"; };
+		D7DA61061CD7DC3D007AB21A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D7DA610B1CD7DC3D007AB21A /* RareAnimalUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RareAnimalUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D7DA610F1CD7DC3D007AB21A /* RareAnimalUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RareAnimalUITests.swift; sourceTree = "<group>"; };
+		D7DA61111CD7DC3D007AB21A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D7DA60E91CD7DC3C007AB21A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D7DA60FD1CD7DC3D007AB21A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D7DA61081CD7DC3D007AB21A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D7DA60E31CD7DC3C007AB21A = {
+			isa = PBXGroup;
+			children = (
+				D7DA60EE1CD7DC3D007AB21A /* RareAnimal */,
+				D7DA61031CD7DC3D007AB21A /* RareAnimalTests */,
+				D7DA610E1CD7DC3D007AB21A /* RareAnimalUITests */,
+				D7DA60ED1CD7DC3C007AB21A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D7DA60ED1CD7DC3C007AB21A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D7DA60EC1CD7DC3C007AB21A /* RareAnimal.app */,
+				D7DA61001CD7DC3D007AB21A /* RareAnimalTests.xctest */,
+				D7DA610B1CD7DC3D007AB21A /* RareAnimalUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D7DA60EE1CD7DC3D007AB21A /* RareAnimal */ = {
+			isa = PBXGroup;
+			children = (
+				D7DA60EF1CD7DC3D007AB21A /* AppDelegate.swift */,
+				D7DA60F11CD7DC3D007AB21A /* ViewController.swift */,
+				D7DA60F31CD7DC3D007AB21A /* Main.storyboard */,
+				D7DA60F61CD7DC3D007AB21A /* Assets.xcassets */,
+				D7DA60F81CD7DC3D007AB21A /* LaunchScreen.storyboard */,
+				D7DA60FB1CD7DC3D007AB21A /* Info.plist */,
+			);
+			path = RareAnimal;
+			sourceTree = "<group>";
+		};
+		D7DA61031CD7DC3D007AB21A /* RareAnimalTests */ = {
+			isa = PBXGroup;
+			children = (
+				D7DA61041CD7DC3D007AB21A /* RareAnimalTests.swift */,
+				D7DA61061CD7DC3D007AB21A /* Info.plist */,
+			);
+			path = RareAnimalTests;
+			sourceTree = "<group>";
+		};
+		D7DA610E1CD7DC3D007AB21A /* RareAnimalUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D7DA610F1CD7DC3D007AB21A /* RareAnimalUITests.swift */,
+				D7DA61111CD7DC3D007AB21A /* Info.plist */,
+			);
+			path = RareAnimalUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D7DA60EB1CD7DC3C007AB21A /* RareAnimal */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D7DA61141CD7DC3D007AB21A /* Build configuration list for PBXNativeTarget "RareAnimal" */;
+			buildPhases = (
+				D7DA60E81CD7DC3C007AB21A /* Sources */,
+				D7DA60E91CD7DC3C007AB21A /* Frameworks */,
+				D7DA60EA1CD7DC3C007AB21A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RareAnimal;
+			productName = RareAnimal;
+			productReference = D7DA60EC1CD7DC3C007AB21A /* RareAnimal.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D7DA60FF1CD7DC3D007AB21A /* RareAnimalTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D7DA61171CD7DC3D007AB21A /* Build configuration list for PBXNativeTarget "RareAnimalTests" */;
+			buildPhases = (
+				D7DA60FC1CD7DC3D007AB21A /* Sources */,
+				D7DA60FD1CD7DC3D007AB21A /* Frameworks */,
+				D7DA60FE1CD7DC3D007AB21A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D7DA61021CD7DC3D007AB21A /* PBXTargetDependency */,
+			);
+			name = RareAnimalTests;
+			productName = RareAnimalTests;
+			productReference = D7DA61001CD7DC3D007AB21A /* RareAnimalTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D7DA610A1CD7DC3D007AB21A /* RareAnimalUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D7DA611A1CD7DC3D007AB21A /* Build configuration list for PBXNativeTarget "RareAnimalUITests" */;
+			buildPhases = (
+				D7DA61071CD7DC3D007AB21A /* Sources */,
+				D7DA61081CD7DC3D007AB21A /* Frameworks */,
+				D7DA61091CD7DC3D007AB21A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D7DA610D1CD7DC3D007AB21A /* PBXTargetDependency */,
+			);
+			name = RareAnimalUITests;
+			productName = RareAnimalUITests;
+			productReference = D7DA610B1CD7DC3D007AB21A /* RareAnimalUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D7DA60E41CD7DC3C007AB21A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = JohnHerseyHighSchool;
+				TargetAttributes = {
+					D7DA60EB1CD7DC3C007AB21A = {
+						CreatedOnToolsVersion = 7.3;
+					};
+					D7DA60FF1CD7DC3D007AB21A = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = D7DA60EB1CD7DC3C007AB21A;
+					};
+					D7DA610A1CD7DC3D007AB21A = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = D7DA60EB1CD7DC3C007AB21A;
+					};
+				};
+			};
+			buildConfigurationList = D7DA60E71CD7DC3C007AB21A /* Build configuration list for PBXProject "RareAnimal" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D7DA60E31CD7DC3C007AB21A;
+			productRefGroup = D7DA60ED1CD7DC3C007AB21A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D7DA60EB1CD7DC3C007AB21A /* RareAnimal */,
+				D7DA60FF1CD7DC3D007AB21A /* RareAnimalTests */,
+				D7DA610A1CD7DC3D007AB21A /* RareAnimalUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D7DA60EA1CD7DC3C007AB21A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D7DA60FA1CD7DC3D007AB21A /* LaunchScreen.storyboard in Resources */,
+				D7DA60F71CD7DC3D007AB21A /* Assets.xcassets in Resources */,
+				D7DA60F51CD7DC3D007AB21A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D7DA60FE1CD7DC3D007AB21A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D7DA61091CD7DC3D007AB21A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D7DA60E81CD7DC3C007AB21A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D7DA60F21CD7DC3D007AB21A /* ViewController.swift in Sources */,
+				D7DA60F01CD7DC3D007AB21A /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D7DA60FC1CD7DC3D007AB21A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D7DA61051CD7DC3D007AB21A /* RareAnimalTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D7DA61071CD7DC3D007AB21A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D7DA61101CD7DC3D007AB21A /* RareAnimalUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D7DA61021CD7DC3D007AB21A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D7DA60EB1CD7DC3C007AB21A /* RareAnimal */;
+			targetProxy = D7DA61011CD7DC3D007AB21A /* PBXContainerItemProxy */;
+		};
+		D7DA610D1CD7DC3D007AB21A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D7DA60EB1CD7DC3C007AB21A /* RareAnimal */;
+			targetProxy = D7DA610C1CD7DC3D007AB21A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D7DA60F31CD7DC3D007AB21A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D7DA60F41CD7DC3D007AB21A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D7DA60F81CD7DC3D007AB21A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D7DA60F91CD7DC3D007AB21A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D7DA61121CD7DC3D007AB21A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D7DA61131CD7DC3D007AB21A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D7DA61151CD7DC3D007AB21A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = RareAnimal/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = JHHS.RareAnimal;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D7DA61161CD7DC3D007AB21A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = RareAnimal/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = JHHS.RareAnimal;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		D7DA61181CD7DC3D007AB21A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = RareAnimalTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = JHHS.RareAnimalTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RareAnimal.app/RareAnimal";
+			};
+			name = Debug;
+		};
+		D7DA61191CD7DC3D007AB21A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = RareAnimalTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = JHHS.RareAnimalTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RareAnimal.app/RareAnimal";
+			};
+			name = Release;
+		};
+		D7DA611B1CD7DC3D007AB21A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = RareAnimalUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = JHHS.RareAnimalUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = RareAnimal;
+			};
+			name = Debug;
+		};
+		D7DA611C1CD7DC3D007AB21A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = RareAnimalUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = JHHS.RareAnimalUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = RareAnimal;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D7DA60E71CD7DC3C007AB21A /* Build configuration list for PBXProject "RareAnimal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D7DA61121CD7DC3D007AB21A /* Debug */,
+				D7DA61131CD7DC3D007AB21A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D7DA61141CD7DC3D007AB21A /* Build configuration list for PBXNativeTarget "RareAnimal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D7DA61151CD7DC3D007AB21A /* Debug */,
+				D7DA61161CD7DC3D007AB21A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		D7DA61171CD7DC3D007AB21A /* Build configuration list for PBXNativeTarget "RareAnimalTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D7DA61181CD7DC3D007AB21A /* Debug */,
+				D7DA61191CD7DC3D007AB21A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		D7DA611A1CD7DC3D007AB21A /* Build configuration list for PBXNativeTarget "RareAnimalUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D7DA611B1CD7DC3D007AB21A /* Debug */,
+				D7DA611C1CD7DC3D007AB21A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D7DA60E41CD7DC3C007AB21A /* Project object */;
+}
