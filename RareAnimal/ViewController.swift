@@ -1,4 +1,4 @@
-// jennifer Lutz
+// Lauren
 //  ViewController.swift
 //  RareAnimal
 //
