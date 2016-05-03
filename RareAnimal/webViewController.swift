@@ -13,6 +13,10 @@ class webViewController: UIViewController {
     @IBOutlet weak var myWebView: UIWebView!
     override func viewDidLoad() {
         super.viewDidLoad()
+        let URL = NSURL(string: "http://www.google.com")!
+        let request = NSURLRequest(URL: URL)
+        myWebView.loadRequest(request)
+
 
         
         
