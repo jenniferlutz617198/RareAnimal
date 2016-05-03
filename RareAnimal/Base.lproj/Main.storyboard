@@ -32,10 +32,16 @@
                                     <segue destination="bTt-UD-uXL" kind="presentation" identifier="toWebView" modalTransitionStyle="flipHorizontal" id="nUp-lF-tSd"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ALB-Gg-h3k">
+                                <rect key="frame" x="0.0" y="64" width="600" height="271"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="2gW-09-zTm"/>
+                    <connections>
+                        <outlet property="myImageView" destination="ALB-Gg-h3k" id="ucN-vV-kGH"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
