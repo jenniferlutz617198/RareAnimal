@@ -25,6 +25,13 @@
                                     <action selector="onTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hyJ-Qj-Nod"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9rE-Kq-fJJ">
+                                <rect key="frame" x="237" y="382" width="126" height="30"/>
+                                <state key="normal" title="WHAT IS ITTT????"/>
+                                <connections>
+                                    <segue destination="bTt-UD-uXL" kind="presentation" identifier="toWebView" modalTransitionStyle="flipHorizontal" id="nUp-lF-tSd"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -59,6 +66,9 @@
                             <constraint firstAttribute="trailingMargin" secondItem="Bjm-9w-lUj" secondAttribute="trailing" constant="-20" id="lXN-La-EfT"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="myWebView" destination="Bjm-9w-lUj" id="Sdq-bO-Mj1"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="29r-Tp-tiu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
