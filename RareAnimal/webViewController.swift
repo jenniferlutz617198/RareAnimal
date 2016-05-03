@@ -9,15 +9,15 @@
 import UIKit
 
 class webViewController: UIViewController {
-
+    
     @IBOutlet weak var myWebView: UIWebView!
     override func viewDidLoad() {
         super.viewDidLoad()
-
-       myWebView.loadRequest(NSURLRequest(URL: NSURL(string: "https://images.google.com/")!))
-   
+        
+        myWebView.loadRequest(NSURLRequest(URL: NSURL(string: "https://images.google.com/")!))
+        
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         

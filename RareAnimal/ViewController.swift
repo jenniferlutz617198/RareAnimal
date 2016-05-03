@@ -14,6 +14,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     var picker = UIImagePickerController()
     override func viewDidLoad() {
         super.viewDidLoad()
+        var photos = [UIImage]()
     }
     
     
