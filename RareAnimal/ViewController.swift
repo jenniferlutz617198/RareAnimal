@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+//kjdfklajlkdj
 class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
     @IBOutlet weak var myImageView: UIImageView!
