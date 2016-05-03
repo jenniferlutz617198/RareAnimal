@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D7268ACC1CD92F2000B5320E /* webViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7268ACB1CD92F2000B5320E /* webViewController.swift */; };
 		D7DA60F01CD7DC3D007AB21A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7DA60EF1CD7DC3D007AB21A /* AppDelegate.swift */; };
 		D7DA60F21CD7DC3D007AB21A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7DA60F11CD7DC3D007AB21A /* ViewController.swift */; };
 		D7DA60F51CD7DC3D007AB21A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7DA60F31CD7DC3D007AB21A /* Main.storyboard */; };
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D7268ACB1CD92F2000B5320E /* webViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = webViewController.swift; sourceTree = "<group>"; };
 		D7DA60EC1CD7DC3C007AB21A /* RareAnimal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RareAnimal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7DA60EF1CD7DC3D007AB21A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D7DA60F11CD7DC3D007AB21A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -100,6 +102,7 @@
 				D7DA60EF1CD7DC3D007AB21A /* AppDelegate.swift */,
 				D7DA60F11CD7DC3D007AB21A /* ViewController.swift */,
 				D7DA60F31CD7DC3D007AB21A /* Main.storyboard */,
+				D7268ACB1CD92F2000B5320E /* webViewController.swift */,
 				D7DA60F61CD7DC3D007AB21A /* Assets.xcassets */,
 				D7DA60F81CD7DC3D007AB21A /* LaunchScreen.storyboard */,
 				D7DA60FB1CD7DC3D007AB21A /* Info.plist */,
@@ -258,6 +261,7 @@
 			files = (
 				D7DA60F21CD7DC3D007AB21A /* ViewController.swift in Sources */,
 				D7DA60F01CD7DC3D007AB21A /* AppDelegate.swift in Sources */,
+				D7268ACC1CD92F2000B5320E /* webViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -484,6 +488,7 @@
 				D7DA61161CD7DC3D007AB21A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D7DA61171CD7DC3D007AB21A /* Build configuration list for PBXNativeTarget "RareAnimalTests" */ = {
 			isa = XCConfigurationList;
@@ -492,6 +497,7 @@
 				D7DA61191CD7DC3D007AB21A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D7DA611A1CD7DC3D007AB21A /* Build configuration list for PBXNativeTarget "RareAnimalUITests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +506,7 @@
 				D7DA611C1CD7DC3D007AB21A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

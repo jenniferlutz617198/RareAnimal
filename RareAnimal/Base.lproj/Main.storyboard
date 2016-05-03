@@ -34,10 +34,10 @@
             </objects>
             <point key="canvasLocation" x="1117" y="349"/>
         </scene>
-        <!--View Controller-->
+        <!--Web View Controller-->
         <scene sceneID="KQ1-Hk-YeD">
             <objects>
-                <viewController id="bTt-UD-uXL" sceneMemberID="viewController">
+                <viewController id="bTt-UD-uXL" customClass="webViewController" customModule="RareAnimal" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="K59-C8-Za2"/>
                         <viewControllerLayoutGuide type="bottom" id="rPe-ae-rDa"/>
