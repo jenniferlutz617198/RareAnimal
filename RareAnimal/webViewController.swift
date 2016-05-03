@@ -14,9 +14,9 @@ class webViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        
-        
-            }
+       myWebView.loadRequest(NSURLRequest(URL: NSURL(string: "https://images.google.com/")!))
+   
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
