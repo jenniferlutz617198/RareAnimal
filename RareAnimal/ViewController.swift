@@ -14,7 +14,10 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     var picker = UIImagePickerController()
     override func viewDidLoad() {
         super.viewDidLoad()
-        var photos = [UIImage]()
+        let image: UIImage = UIImage(named: " ")!
+        myImageView = UIImageView(image: image)
+        myImageView.frame = CGRect(x: 0, y: 0, width: 100, height: 200)
+        view.addSubview(myImageView)
     }
     
     
