@@ -63,6 +63,18 @@
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
                             </webView>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eAU-eb-Wie">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                                <items>
+                                    <navigationItem id="nWx-2P-kbE">
+                                        <barButtonItem key="leftBarButtonItem" title="Dismiss" id="HlO-rT-1gd">
+                                            <connections>
+                                                <action selector="dismissBarButton:" destination="bTt-UD-uXL" id="FXp-Uf-jNQ"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -78,7 +90,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="29r-Tp-tiu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1776" y="349"/>
+            <point key="canvasLocation" x="1779" y="343"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="bJr-Cx-OiV">

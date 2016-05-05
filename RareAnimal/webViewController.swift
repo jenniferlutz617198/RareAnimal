@@ -17,9 +17,10 @@ class webViewController: UIViewController {
         myWebView.loadRequest(NSURLRequest(URL: NSURL(string: "http://ctrlq.org/google/images/")!))
         
     }
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        
+    @IBAction func dismissBarButton(sender: UIBarButtonItem) {
+        dismissViewControllerAnimated(true) { ()
+            -> Void in
+        }
     }
+    
 }

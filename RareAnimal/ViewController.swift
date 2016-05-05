@@ -15,7 +15,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     override func viewDidLoad() {
         super.viewDidLoad()
     }
-    hjh
+    
     
     @IBAction func onTapped(sender: UIButton) {
     let actionsheet = UIAlertController(title: "Select image", message: nil, preferredStyle: .ActionSheet)
