@@ -22,5 +22,15 @@ class webViewController: UIViewController {
             -> Void in
         }
     }
+    @IBAction func shareBarButton(sender: UIBarButtonItem) {
+        let actionsheet = UIAlertController(title: "Share to facebook, twitter, instagram,", message: nil, preferredStyle: .ActionSheet)
+        actionsheet.popoverPresentationController?.sourceView = self.view
+        actionsheet.popoverPresentationController?.sourceRect = CGRect(x: 0, y: self.view.frame.height, width: self.view.frame.width, height: 100)
+        let facebookButton = UIAlertAction(title: "Facebook", style: .Default) { (action) in
+            <#code#>
+        }
+        
+    }
+    
     
 }
