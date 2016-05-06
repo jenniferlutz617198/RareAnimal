@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Social
 
 class webViewController: UIViewController {
     
@@ -28,10 +29,13 @@ class webViewController: UIViewController {
         actionsheet.popoverPresentationController?.sourceRect = CGRect(x: 0, y: self.view.frame.height, width: self.view.frame.width, height: 100)
         let faceBookButton = UIAlertAction(title: "FaceBook", style: .Default, handler: nil)
         actionsheet.addAction(faceBookButton)
+        self.presentViewController(actionsheet, animated: true, completion: nil)
         let twitterButton = UIAlertAction(title: "Twitter", style: .Default, handler: nil)
         actionsheet.addAction(twitterButton)
+        self.presentViewController(actionsheet, animated: true, completion: nil)
         let instagramButton = UIAlertAction(title: "Instagram", style: .Default, handler: nil)
         actionsheet.addAction(instagramButton)
+        self.presentViewController(actionsheet, animated: true, completion: nil)
     }
     
     
