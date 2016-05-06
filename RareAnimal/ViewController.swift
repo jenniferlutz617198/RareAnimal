@@ -36,4 +36,4 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
 }
 
 }
-
+//https://www.codementor.io/swift/tutorial/ios-development-facebook-twitter-sharing
