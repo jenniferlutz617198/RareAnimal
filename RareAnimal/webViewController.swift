@@ -26,11 +26,14 @@ class webViewController: UIViewController {
         let actionsheet = UIAlertController(title: "Share to facebook, twitter, instagram,", message: nil, preferredStyle: .ActionSheet)
         actionsheet.popoverPresentationController?.sourceView = self.view
         actionsheet.popoverPresentationController?.sourceRect = CGRect(x: 0, y: self.view.frame.height, width: self.view.frame.width, height: 100)
-        let facebookButton = UIAlertAction(title: "Facebook", style: .Default) { (action) in
-            <#code#>
-        }
-        
+        let faceBookButton = UIAlertAction(title: "FaceBook", style: .Default, handler: nil)
+        actionsheet.addAction(faceBookButton)
+        let twitterButton = UIAlertAction(title: "Twitter", style: .Default, handler: nil)
+        actionsheet.addAction(twitterButton)
+        let instagramButton = UIAlertAction(title: "Instagram", style: .Default, handler: nil)
+        actionsheet.addAction(instagramButton)
     }
     
     
 }
+
