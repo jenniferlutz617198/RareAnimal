@@ -85,7 +85,7 @@
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
                             </webView>
                             <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eAU-eb-Wie">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
                                 <items>
                                     <navigationItem id="nWx-2P-kbE">
                                         <barButtonItem key="leftBarButtonItem" title="Dismiss" id="HlO-rT-1gd">
@@ -110,6 +110,7 @@
                             <constraint firstAttribute="trailingMargin" secondItem="Bjm-9w-lUj" secondAttribute="trailing" constant="-20" id="lXN-La-EfT"/>
                         </constraints>
                     </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                     <connections>
                         <outlet property="myWebView" destination="Bjm-9w-lUj" id="Sdq-bO-Mj1"/>
                     </connections>
