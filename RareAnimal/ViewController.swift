@@ -7,7 +7,7 @@
 //
 
 import UIKit
-//kjdfklajlkdj
+import Social
 class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
     @IBOutlet weak var myImageView: UIImageView!
@@ -34,6 +34,18 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     presentViewController(actionsheet, animated: true, completion: nil)
     
 }
+    @IBAction func faceBookButtonPressed(sender: UIButton) {
+        if SLComposeViewController.isAvailableForServiceType(SLServiceTypeTwitter){
+            var facebookSheet:SLComposeViewController = SLComposeViewController(forServiceType: SLServiceTypeTwitter)
+            facebookSheet.setInitialText("Share on Twitter")
+            self.presentViewController(facebookSheet, animated: true, completion: nil)
+        } else {
+            var alert = UIAlertController(title: "Accounts", message: "Please login to a Twitter account to share.", preferredStyle: UIAlertControllerStyle.Alert)
+            alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil))
+            self.presentViewController(alert, animated: true, completion: nil)
+        }
+    }
+    }
+    
 
-}
 //https://www.codementor.io/swift/tutorial/ios-development-facebook-twitter-sharing
