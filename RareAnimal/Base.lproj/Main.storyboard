@@ -54,6 +54,9 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6dV-hF-ODD">
                                 <rect key="frame" x="229" y="611" width="160" height="31"/>
                                 <state key="normal" title="Twitter sharing button"/>
+                                <connections>
+                                    <action selector="twitterButtonPushed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RIW-vQ-Ee1"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
