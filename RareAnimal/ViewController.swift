@@ -62,6 +62,21 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         
     }
 
+    @IBAction func instagramButtonPushed(sender: UIButton) {
+        if SLComposeViewController.isAvailableForServiceType(SLServiceTypeTwitter){
+            let instagramSheet:SLComposeViewController = SLComposeViewController(forServiceType: SLServiceTypeTwitter)
+            instagramSheet.setInitialText("Share on Instagram")
+            self.presentViewController(instagramSheet, animated: true, completion: nil)
+        } else {
+            let alert = UIAlertController(title: "Accounts", message: "Please login to a Instagram account to share.", preferredStyle: UIAlertControllerStyle.Alert)
+            alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil))
+            self.presentViewController(alert, animated: true, completion: nil)
+            
+        }
+        
+
+        
+    }
     
 
 }

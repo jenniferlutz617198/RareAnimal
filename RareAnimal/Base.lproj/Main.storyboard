@@ -58,6 +58,13 @@
                                     <action selector="twitterButtonPushed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RIW-vQ-Ee1"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kmd-IX-iQr">
+                                <rect key="frame" x="27" y="655" width="185" height="34"/>
+                                <state key="normal" title="Instagram sharing button"/>
+                                <connections>
+                                    <action selector="instagramButtonPushed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lsK-vJ-OPQ"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
