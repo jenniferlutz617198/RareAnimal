@@ -114,11 +114,6 @@
                                                 <action selector="dismissBarButton:" destination="bTt-UD-uXL" id="FXp-Uf-jNQ"/>
                                             </connections>
                                         </barButtonItem>
-                                        <barButtonItem key="rightBarButtonItem" title="Share" id="KEz-Jw-LPi">
-                                            <connections>
-                                                <action selector="shareBarButton:" destination="bTt-UD-uXL" id="f5i-Ce-D0Y"/>
-                                            </connections>
-                                        </barButtonItem>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
