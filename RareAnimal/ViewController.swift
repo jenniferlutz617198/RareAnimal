@@ -11,9 +11,19 @@ import Social
 class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
     @IBOutlet weak var myImageView: UIImageView!
+    var currentImage: UIImage!
     var picker = UIImagePickerController()
     override func viewDidLoad() {
         super.viewDidLoad()
+        title = "kdjfksjd"
+        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .Add, target: self, action: #selector(importPicture))
+        
+    }
+    func importPicture() {
+        let picker = UIImagePickerController()
+        picker.allowsEditing = true
+        picker.delegate = self
+        presentViewController(picker, animated: true, completion: nil)
     }
     
     
