@@ -23,9 +23,6 @@ class webViewController: UIViewController {
             -> Void in
         }
     }
-    @IBAction func shareBarButton(sender: UIBarButtonItem) {
-            
-        }
     
     
 }
