@@ -15,7 +15,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     var picker = UIImagePickerController()
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = "kdjfksjd"
+        title = "Rare Animal"
         navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .Add, target: self, action: #selector(importPicture))
         
     }
@@ -26,12 +26,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         presentViewController(picker, animated: true, completion: nil)
         
     }
-    func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : AnyObject]) {
-        var newImage: UIImage
-        
-        if let possibleImage = info[UIImagePickerControllerEditedImage] as?
-    }
- 
+    
     
     
 
