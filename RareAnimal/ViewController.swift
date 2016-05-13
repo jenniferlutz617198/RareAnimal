@@ -26,6 +26,10 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         presentViewController(picker, animated: true, completion: nil)
         
     }
+    func imagePickerController(picker: UIImagePickerController, didFinishPickingImage image: UIImage, editingInfo: [String : AnyObject]?) {
+        myImageView.image = image
+        self.dismissViewControllerAnimated(true, completion: nil)
+    }
     
     
     
