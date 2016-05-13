@@ -24,9 +24,17 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         picker.allowsEditing = true
         picker.delegate = self
         presentViewController(picker, animated: true, completion: nil)
+        
     }
+    func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : AnyObject]) {
+        var newImage: UIImage
+        
+        if let possibleImage = info[UIImagePickerControllerEditedImage] as?
+    }
+ 
     
     
+
     @IBAction func onTapped(sender: UIButton) {
     let actionsheet = UIAlertController(title: "Select image", message: nil, preferredStyle: .ActionSheet)
     actionsheet.popoverPresentationController?.sourceView = self.view

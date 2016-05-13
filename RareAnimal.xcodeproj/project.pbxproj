@@ -8,13 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		D7268ACC1CD92F2000B5320E /* webViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7268ACB1CD92F2000B5320E /* webViewController.swift */; };
+		D7D934971CE6604500074BB9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D7D934961CE6604500074BB9 /* Assets.xcassets */; };
 		D7DA60F01CD7DC3D007AB21A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7DA60EF1CD7DC3D007AB21A /* AppDelegate.swift */; };
 		D7DA60F21CD7DC3D007AB21A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7DA60F11CD7DC3D007AB21A /* ViewController.swift */; };
 		D7DA60F51CD7DC3D007AB21A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7DA60F31CD7DC3D007AB21A /* Main.storyboard */; };
 		D7DA60FA1CD7DC3D007AB21A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7DA60F81CD7DC3D007AB21A /* LaunchScreen.storyboard */; };
 		D7DA61051CD7DC3D007AB21A /* RareAnimalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7DA61041CD7DC3D007AB21A /* RareAnimalTests.swift */; };
 		D7DA61101CD7DC3D007AB21A /* RareAnimalUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7DA610F1CD7DC3D007AB21A /* RareAnimalUITests.swift */; };
-		D7F288F91CE272A9009AE19C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D7F288F81CE272A9009AE19C /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +36,7 @@
 
 /* Begin PBXFileReference section */
 		D7268ACB1CD92F2000B5320E /* webViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = webViewController.swift; sourceTree = "<group>"; };
+		D7D934961CE6604500074BB9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D7DA60EC1CD7DC3C007AB21A /* RareAnimal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RareAnimal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7DA60EF1CD7DC3D007AB21A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D7DA60F11CD7DC3D007AB21A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -48,7 +49,6 @@
 		D7DA610B1CD7DC3D007AB21A /* RareAnimalUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RareAnimalUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7DA610F1CD7DC3D007AB21A /* RareAnimalUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RareAnimalUITests.swift; sourceTree = "<group>"; };
 		D7DA61111CD7DC3D007AB21A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D7F288F81CE272A9009AE19C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../../../.Trash/Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,8 +102,8 @@
 				D7DA60EF1CD7DC3D007AB21A /* AppDelegate.swift */,
 				D7DA60F11CD7DC3D007AB21A /* ViewController.swift */,
 				D7DA60F31CD7DC3D007AB21A /* Main.storyboard */,
-				D7F288F81CE272A9009AE19C /* Assets.xcassets */,
 				D7268ACB1CD92F2000B5320E /* webViewController.swift */,
+				D7D934961CE6604500074BB9 /* Assets.xcassets */,
 				D7DA60F81CD7DC3D007AB21A /* LaunchScreen.storyboard */,
 				D7DA60FB1CD7DC3D007AB21A /* Info.plist */,
 			);
@@ -234,7 +234,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D7DA60FA1CD7DC3D007AB21A /* LaunchScreen.storyboard in Resources */,
-				D7F288F91CE272A9009AE19C /* Assets.xcassets in Resources */,
+				D7D934971CE6604500074BB9 /* Assets.xcassets in Resources */,
 				D7DA60F51CD7DC3D007AB21A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
