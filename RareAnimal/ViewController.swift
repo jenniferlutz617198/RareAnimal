@@ -33,24 +33,24 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     
     
     
-
-    @IBAction func onTapped(sender: UIButton) {
-    let actionsheet = UIAlertController(title: "Select image", message: nil, preferredStyle: .ActionSheet)
-    actionsheet.popoverPresentationController?.sourceView = self.view
-    actionsheet.popoverPresentationController?.sourceRect = CGRect(x: 0, y: self.view.frame.height, width: self.view.frame.width, height: 100)
-    let cameraButton = UIAlertAction(title: "camera", style: .Default) { (action) in
-        self.picker.sourceType = UIImagePickerControllerSourceType.Camera
-        self.presentViewController(self.picker, animated: true, completion: nil)
-    }
-    actionsheet.addAction(cameraButton)
-    let libraryButton = UIAlertAction(title: "library", style: .Default) { (action) in
-        self.picker.sourceType = UIImagePickerControllerSourceType.PhotoLibrary
-        self.presentViewController(self.picker, animated: true, completion: nil)
-    }
-    actionsheet.addAction(libraryButton)
-    presentViewController(actionsheet, animated: true, completion: nil)
     
-}
+    @IBAction func onTapped(sender: UIButton) {
+        let actionsheet = UIAlertController(title: "Select image", message: nil, preferredStyle: .ActionSheet)
+        actionsheet.popoverPresentationController?.sourceView = self.view
+        actionsheet.popoverPresentationController?.sourceRect = CGRect(x: 0, y: self.view.frame.height, width: self.view.frame.width, height: 100)
+        let cameraButton = UIAlertAction(title: "camera", style: .Default) { (action) in
+            self.picker.sourceType = UIImagePickerControllerSourceType.Camera
+            self.presentViewController(self.picker, animated: true, completion: nil)
+        }
+        actionsheet.addAction(cameraButton)
+        let libraryButton = UIAlertAction(title: "library", style: .Default) { (action) in
+            self.picker.sourceType = UIImagePickerControllerSourceType.PhotoLibrary
+            self.presentViewController(self.picker, animated: true, completion: nil)
+        }
+        actionsheet.addAction(libraryButton)
+        presentViewController(actionsheet, animated: true, completion: nil)
+        
+    }
     @IBAction func faceBookButtonPressed(sender: UIButton) {
         if SLComposeViewController.isAvailableForServiceType(SLServiceTypeTwitter){
             let facebookSheet:SLComposeViewController = SLComposeViewController(forServiceType: SLServiceTypeTwitter)
@@ -71,14 +71,14 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
             let alert = UIAlertController(title: "Accounts", message: "Please login to a Twitter account to share.", preferredStyle: UIAlertControllerStyle.Alert)
             alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil))
             self.presentViewController(alert, animated: true, completion: nil)
-
-    }
-    
-    
+            
+        }
+        
+        
         
         
     }
-
+    
     @IBAction func instagramButtonPushed(sender: UIButton) {
         if SLComposeViewController.isAvailableForServiceType(SLServiceTypeTwitter){
             let instagramSheet:SLComposeViewController = SLComposeViewController(forServiceType: SLServiceTypeTwitter)
@@ -91,9 +91,53 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
             
         }
         
-
+        
         
     }
     
-
+    @IBAction func mySpaceButtonPushed(sender: UIButton) {
+        if SLComposeViewController.isAvailableForServiceType(SLServiceTypeTwitter){
+            let mySpaceSheet:SLComposeViewController = SLComposeViewController(forServiceType: SLServiceTypeTwitter)
+            mySpaceSheet.setInitialText("Share on MySpace")
+            self.presentViewController(mySpaceSheet, animated: true, completion: nil)
+        } else {
+            let alert = UIAlertController(title: "Accounts", message: "Please login to a MySpace account to share.", preferredStyle: UIAlertControllerStyle.Alert)
+            alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil))
+            self.presentViewController(alert, animated: true, completion: nil)
+            
+        }
+        
+        
+    }
+    @IBAction func tumblrButtonPressed(sender: UIButton) {
+        if SLComposeViewController.isAvailableForServiceType(SLServiceTypeTwitter){
+            let tumblrSheet:SLComposeViewController = SLComposeViewController(forServiceType: SLServiceTypeTwitter)
+            tumblrSheet.setInitialText("Share on Tumblr")
+            self.presentViewController(tumblrSheet, animated: true, completion: nil)
+        } else {
+            let alert = UIAlertController(title: "Accounts", message: "Please login to a Tumblr account to share.", preferredStyle: UIAlertControllerStyle.Alert)
+            alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil))
+            self.presentViewController(alert, animated: true, completion: nil)
+            
+        }
+        
+        
+    }
+    @IBAction func pinterestButtonPressed(sender: UIButton) {
+        if SLComposeViewController.isAvailableForServiceType(SLServiceTypeTwitter){
+            let pinterestSheet:SLComposeViewController = SLComposeViewController(forServiceType: SLServiceTypeTwitter)
+            pinterestSheet.setInitialText("Share on Pinterest")
+            self.presentViewController(pinterestSheet, animated: true, completion: nil)
+        } else {
+            let alert = UIAlertController(title: "Accounts", message: "Please login to a Pinterest account to share.", preferredStyle: UIAlertControllerStyle.Alert)
+            alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil))
+            self.presentViewController(alert, animated: true, completion: nil)
+            
+        }
+        
+    }
+    
+    
+    
+    
 }
