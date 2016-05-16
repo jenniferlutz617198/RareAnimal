@@ -101,11 +101,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bjm-9w-lUj">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
-                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
-                            </webView>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eAU-eb-Wie">
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eAU-eb-Wie">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
                                 <items>
                                     <navigationItem id="nWx-2P-kbE">
@@ -117,13 +113,23 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bjm-9w-lUj">
+                                <rect key="frame" x="0.0" y="44" width="414" height="692"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="692" id="GOa-2X-NPT"/>
+                                    <constraint firstAttribute="width" constant="414" id="Uyd-3J-3zi"/>
+                                </constraints>
+                            </webView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="Bjm-9w-lUj" firstAttribute="top" secondItem="Inr-Z6-juZ" secondAttribute="topMargin" id="7At-Ty-cjh"/>
-                            <constraint firstItem="rPe-ae-rDa" firstAttribute="top" secondItem="Bjm-9w-lUj" secondAttribute="bottom" id="FsZ-ok-lCS"/>
-                            <constraint firstItem="Bjm-9w-lUj" firstAttribute="leading" secondItem="Inr-Z6-juZ" secondAttribute="leadingMargin" constant="-20" id="Jgm-nZ-il3"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="Bjm-9w-lUj" secondAttribute="trailing" constant="-20" id="lXN-La-EfT"/>
+                            <constraint firstItem="Bjm-9w-lUj" firstAttribute="top" secondItem="eAU-eb-Wie" secondAttribute="bottom" id="EhY-Re-i0V"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="eAU-eb-Wie" secondAttribute="trailing" constant="-20" id="SyC-WU-b2O"/>
+                            <constraint firstItem="eAU-eb-Wie" firstAttribute="top" secondItem="Inr-Z6-juZ" secondAttribute="topMargin" id="Xif-1C-0ue"/>
+                            <constraint firstItem="Bjm-9w-lUj" firstAttribute="top" secondItem="eAU-eb-Wie" secondAttribute="bottom" id="bg4-w7-Rht"/>
+                            <constraint firstItem="Bjm-9w-lUj" firstAttribute="leading" secondItem="Inr-Z6-juZ" secondAttribute="leadingMargin" constant="-20" id="jPJ-KT-Tlb"/>
+                            <constraint firstItem="eAU-eb-Wie" firstAttribute="leading" secondItem="Inr-Z6-juZ" secondAttribute="leadingMargin" constant="-20" id="y9B-aD-Ird"/>
                         </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
