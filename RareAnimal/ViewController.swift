@@ -52,92 +52,17 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         
     }
     @IBAction func faceBookButtonPressed(sender: UIButton) {
-        if SLComposeViewController.isAvailableForServiceType(SLServiceTypeTwitter){
-            let facebookSheet:SLComposeViewController = SLComposeViewController(forServiceType: SLServiceTypeTwitter)
-            facebookSheet.setInitialText("Share on FaceBook")
-            self.presentViewController(facebookSheet, animated: true, completion: nil)
-        } else {
-            let alert = UIAlertController(title: "Accounts", message: "Please login to a FaceBook account to share.", preferredStyle: UIAlertControllerStyle.Alert)
-            alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil))
-            self.presentViewController(alert, animated: true, completion: nil)
-        }
+        let shareToFacebook: SLComposeViewController = SLComposeViewController(forServiceType: SLServiceTypeFacebook)
+        self.presentViewController(shareToFacebook, animated: true, completion: nil)
+
+        
     }
     @IBAction func twitterButtonPushed(sender: UIButton) {
-        if SLComposeViewController.isAvailableForServiceType(SLServiceTypeTwitter){
-            let facebookSheet:SLComposeViewController = SLComposeViewController(forServiceType: SLServiceTypeTwitter)
-            facebookSheet.setInitialText("Share on Twitter")
-            self.presentViewController(facebookSheet, animated: true, completion: nil)
-        } else {
-            let alert = UIAlertController(title: "Accounts", message: "Please login to a Twitter account to share.", preferredStyle: UIAlertControllerStyle.Alert)
-            alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil))
-            self.presentViewController(alert, animated: true, completion: nil)
-            
-        }
-        
-        
-        
+        let shareToTwitter: SLComposeViewController = SLComposeViewController(forServiceType: SLServiceTypeTwitter)
+        self.presentViewController(shareToTwitter, animated: true, completion: nil)
         
     }
     
-    @IBAction func instagramButtonPushed(sender: UIButton) {
-        if SLComposeViewController.isAvailableForServiceType(SLServiceTypeTwitter){
-            let instagramSheet:SLComposeViewController = SLComposeViewController(forServiceType: SLServiceTypeTwitter)
-            instagramSheet.setInitialText("Share on Instagram")
-            self.presentViewController(instagramSheet, animated: true, completion: nil)
-        } else {
-            let alert = UIAlertController(title: "Accounts", message: "Please login to a Instagram account to share.", preferredStyle: UIAlertControllerStyle.Alert)
-            alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil))
-            self.presentViewController(alert, animated: true, completion: nil)
-            
-        }
         
-        
-        
-    }
-    
-    @IBAction func mySpaceButtonPushed(sender: UIButton) {
-        if SLComposeViewController.isAvailableForServiceType(SLServiceTypeTwitter){
-            let mySpaceSheet:SLComposeViewController = SLComposeViewController(forServiceType: SLServiceTypeTwitter)
-            mySpaceSheet.setInitialText("Share on MySpace")
-            self.presentViewController(mySpaceSheet, animated: true, completion: nil)
-        } else {
-            let alert = UIAlertController(title: "Accounts", message: "Please login to a MySpace account to share.", preferredStyle: UIAlertControllerStyle.Alert)
-            alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil))
-            self.presentViewController(alert, animated: true, completion: nil)
-            
-        }
-        
-        
-    }
-    @IBAction func tumblrButtonPressed(sender: UIButton) {
-        if SLComposeViewController.isAvailableForServiceType(SLServiceTypeTwitter){
-            let tumblrSheet:SLComposeViewController = SLComposeViewController(forServiceType: SLServiceTypeTwitter)
-            tumblrSheet.setInitialText("Share on Tumblr")
-            self.presentViewController(tumblrSheet, animated: true, completion: nil)
-        } else {
-            let alert = UIAlertController(title: "Accounts", message: "Please login to a Tumblr account to share.", preferredStyle: UIAlertControllerStyle.Alert)
-            alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil))
-            self.presentViewController(alert, animated: true, completion: nil)
-            
-        }
-        
-        
-    }
-    @IBAction func pinterestButtonPressed(sender: UIButton) {
-        if SLComposeViewController.isAvailableForServiceType(SLServiceTypeTwitter){
-            let pinterestSheet:SLComposeViewController = SLComposeViewController(forServiceType: SLServiceTypeTwitter)
-            pinterestSheet.setInitialText("Share on Pinterest")
-            self.presentViewController(pinterestSheet, animated: true, completion: nil)
-        } else {
-            let alert = UIAlertController(title: "Accounts", message: "Please login to a Pinterest account to share.", preferredStyle: UIAlertControllerStyle.Alert)
-            alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil))
-            self.presentViewController(alert, animated: true, completion: nil)
-            
-        }
-        
-    }
-    
-    
-    
     
 }
