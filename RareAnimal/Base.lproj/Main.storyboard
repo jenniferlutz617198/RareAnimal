@@ -45,8 +45,8 @@
                                 <rect key="frame" x="17" y="85" width="380" height="310"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nuw-rI-qf5">
-                                <rect key="frame" x="8" y="596" width="204" height="24"/>
-                                <state key="normal" title="Facebook sharing button "/>
+                                <rect key="frame" x="17" y="638" width="272" height="36"/>
+                                <state key="normal" title="Facebook sharing button only by text"/>
                                 <connections>
                                     <action selector="faceBookButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="el7-m8-76a"/>
                                 </connections>
@@ -56,6 +56,13 @@
                                 <state key="normal" title="Twitter sharing button"/>
                                 <connections>
                                     <action selector="twitterButtonPushed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RIW-vQ-Ee1"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wEb-3e-v4m">
+                                <rect key="frame" x="105" y="403" width="205" height="51"/>
+                                <state key="normal" title="Share photo on Facebook"/>
+                                <connections>
+                                    <action selector="sharePhotoToFacebook:" destination="BYZ-38-t0r" eventType="touchUpInside" id="g79-sk-nY6"/>
                                 </connections>
                             </button>
                         </subviews>
