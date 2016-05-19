@@ -8,6 +8,8 @@
 
 import UIKit
 import Social
+import MessageUI
+
 class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
     @IBOutlet weak var myImageView: UIImageView!

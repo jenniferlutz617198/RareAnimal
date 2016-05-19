@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D72637BD1CEE4E3700A3B32B /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D72637BC1CEE4E3700A3B32B /* MessageUI.framework */; };
 		D7268ACC1CD92F2000B5320E /* webViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7268ACB1CD92F2000B5320E /* webViewController.swift */; };
 		D79368561CECFB180026FB13 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D79368551CECFB180026FB13 /* Social.framework */; };
 		D7D934971CE6604500074BB9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D7D934961CE6604500074BB9 /* Assets.xcassets */; };
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D72637BC1CEE4E3700A3B32B /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		D7268ACB1CD92F2000B5320E /* webViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = webViewController.swift; sourceTree = "<group>"; };
 		D79368551CECFB180026FB13 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		D7D934961CE6604500074BB9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -58,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D72637BD1CEE4E3700A3B32B /* MessageUI.framework in Frameworks */,
 				D79368561CECFB180026FB13 /* Social.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -82,6 +85,7 @@
 		D7DA60E31CD7DC3C007AB21A = {
 			isa = PBXGroup;
 			children = (
+				D72637BC1CEE4E3700A3B32B /* MessageUI.framework */,
 				D79368551CECFB180026FB13 /* Social.framework */,
 				D7DA60EE1CD7DC3D007AB21A /* RareAnimal */,
 				D7DA61031CD7DC3D007AB21A /* RareAnimalTests */,
