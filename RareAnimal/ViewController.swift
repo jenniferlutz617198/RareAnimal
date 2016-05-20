@@ -28,7 +28,10 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         presentViewController(picker, animated: true, completion: nil)
         
     }
-    
+    func imagePickerControllerDidCancel(picker: UIImagePickerController) {
+        picker.dismissViewControllerAnimated(true, completion: nil)
+    }
+
     
     
     
@@ -47,12 +50,16 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         }
         actionsheet.addAction(libraryButton)
         presentViewController(actionsheet, animated: true, completion: nil)
-        
+    
     }
     @IBAction func faceBookButtonPressed(sender: UIButton) {
         let shareToFacebook: SLComposeViewController = SLComposeViewController(forServiceType: SLServiceTypeFacebook)
         self.presentViewController(shareToFacebook, animated: true, completion: nil)
     }
+    
+    @IBAction func twitterButtonPushed(sender: UIButton) {
+        let shareToTwitter: SLComposeViewController = SLComposeViewController(forServiceType: SLServiceTypeTwitter)
+        self.presentViewController(shareToTwitter, animated: true, completion: nil)
         
         @IBAction func twitterButtonPushed(sender: UIButton) {
             let shareToTwitter: SLComposeViewController = SLComposeViewController(forServiceType: SLServiceTypeTwitter)
