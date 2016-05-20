@@ -10,7 +10,7 @@ import UIKit
 import Social
 import MessageUI
 
-class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate, MFMessageComposeViewControllerDelegate {
     
     @IBOutlet weak var myImageView: UIImageView!
     var currentImage: UIImage!
@@ -31,7 +31,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     func imagePickerControllerDidCancel(picker: UIImagePickerController) {
         picker.dismissViewControllerAnimated(true, completion: nil)
     }
-
+    
     
     
     
@@ -50,7 +50,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         }
         actionsheet.addAction(libraryButton)
         presentViewController(actionsheet, animated: true, completion: nil)
-    
+        
     }
     @IBAction func faceBookButtonPressed(sender: UIButton) {
         let shareToFacebook: SLComposeViewController = SLComposeViewController(forServiceType: SLServiceTypeFacebook)
@@ -60,9 +60,39 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     @IBAction func twitterButtonPushed(sender: UIButton) {
         let shareToTwitter: SLComposeViewController = SLComposeViewController(forServiceType: SLServiceTypeTwitter)
         self.presentViewController(shareToTwitter, animated: true, completion: nil)
+            
+        }
+        
+        //Don't put anything after Message due to "Default: break" for precausion
+        
+        @IBAction func sendMessage(sender: AnyObject) {
+            let messageVC = MFMessageComposeViewController ()
+            
+            messageVC.body = "Enter a message";
+            messageVC.recipients = ["Enter number"]
+            messageVC.messageComposeDelegate = self;
+            
+            self.presentViewController(messageVC, animated: false, completion: nil)
+        }
+        
+        func messageComposeViewController(controller: MFMessageComposeViewController, didFinishWithResult result: MessageComposeResult) {
+            switch (result.rawValue) {
+            case MessageComposeResultCancelled.rawValue:
+                print("Message was cancelled")
+                self.dismissViewControllerAnimated(true, completion: nil)
+            case MessageComposeResultFailed.rawValue:
+                print("Message failed")
+                self.dismissViewControllerAnimated(true, completion: nil)
+            case MessageComposeResultSent.rawValue:
+                print("Message was sent")
+                self.dismissViewControllerAnimated(true, completion: nil)
+            default: break
+                
+                
+            }
+            
+        }
         
     }
     
-    
-    
-}
+
