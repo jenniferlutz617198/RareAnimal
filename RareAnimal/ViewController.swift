@@ -64,6 +64,10 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     
     @IBAction func twitterButtonPushed(sender: UIButton) {
         let shareToTwitter: SLComposeViewController = SLComposeViewController(forServiceType: SLServiceTypeTwitter)
+        let socilaController = SLComposeViewController(forServiceType: SLServiceTypeTwitter)
+        // socialController.addImage()
+        // socialController.addURL()
+        
         self.presentViewController(shareToTwitter, animated: true, completion: nil)
             
         }
