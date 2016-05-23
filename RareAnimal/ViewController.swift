@@ -55,6 +55,10 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     }
     @IBAction func faceBookButtonPressed(sender: UIButton) {
         let shareToFacebook: SLComposeViewController = SLComposeViewController(forServiceType: SLServiceTypeFacebook)
+        let socialController = SLComposeViewController(forServiceType: SLServiceTypeFacebook)
+        // socialController.addImage()
+        // socialController.addURL()
+        
         self.presentViewController(shareToFacebook, animated: true, completion: nil)
     }
     
