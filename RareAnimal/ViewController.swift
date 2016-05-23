@@ -1,7 +1,7 @@
 //  This is a test
 //  ViewController.swift
 //  RareAnimal
-//
+// hi
 //  Created by student3 on 5/2/16.
 //  Copyright © 2016 JohnHerseyHighSchool. All rights reserved.
 //
@@ -17,6 +17,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     var picker = UIImagePickerController()
     override func viewDidLoad() {
         super.viewDidLoad()
+        picker.delegate = self
         title = "Rare Animal"
         navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .Add, target: self, action: #selector(importPicture))
         
