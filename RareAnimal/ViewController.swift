@@ -22,6 +22,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .Add, target: self, action: #selector(importPicture))
         
     }
+
     func importPicture() {
         let picker = UIImagePickerController()
         picker.allowsEditing = true
@@ -62,19 +63,24 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
             self.presentViewController(socialController, animated: true, completion: nil)
         }
         
-        if(SLComposeViewController.isAvailableForServiceType(SLServiceTypeFacebook)){
-            if(SLComposeViewController.isAvailableForServiceType(SLServiceTypeFacebook)){
-            let socilaController = SLComposeViewController(forServiceType: SLServiceTypeTwitter)
-            // socialController.addImage()
-            // socialController.addURL()
+    }
+    @IBAction func twitterButtonPushed(sender: UIButton) {
+        if(SLComposeViewController.isAvailableForServiceType(SLServiceTypeTwitter)){
+            let socialController = SLComposeViewController(forServiceType: SLServiceTypeTwitter)
+            //socialController.addImage() Look up what to put the image to be
+            //socialController.addURL()   Look up the URL
             
-            self.presentViewController(socilaController, animated: true, completion: nil)
-            
-        }
+            self.presentViewController(socialController, animated: true, completion: nil)
+
+        
+    }
+
+
+    
         
         //Don't put anything after Message due to "Default: break" for precausion
         }
-    }
+    
         @IBAction func sendMessage(sender: AnyObject) {
             let messageVC = MFMessageComposeViewController ()
             
