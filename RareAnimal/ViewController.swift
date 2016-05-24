@@ -54,27 +54,27 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         
     }
     @IBAction func faceBookButtonPressed(sender: UIButton) {
-        let shareToFacebook: SLComposeViewController = SLComposeViewController(forServiceType: SLServiceTypeFacebook)
+        if(SLComposeViewController.isAvailableForServiceType(SLServiceTypeFacebook)){
         let socialController = SLComposeViewController(forServiceType: SLServiceTypeFacebook)
-        // socialController.addImage()
-        // socialController.addURL()
+         //socialController.addImage() Look up what to put the image to be
+         //socialController.addURL()   Look up the URL
         
-        self.presentViewController(shareToFacebook, animated: true, completion: nil)
+        self.presentViewController(socialController, animated: true, completion: nil)
     }
-    
-    @IBAction func twitterButtonPushed(sender: UIButton) {
-        let shareToTwitter: SLComposeViewController = SLComposeViewController(forServiceType: SLServiceTypeTwitter)
-        let socilaController = SLComposeViewController(forServiceType: SLServiceTypeTwitter)
-        // socialController.addImage()
-        // socialController.addURL()
+
+    func twitterButtonPushed(sender: UIButton) {
+        if(SLComposeViewController.isAvailableForServiceType(SLServiceTypeTwitter)){
+        let socialController = SLComposeViewController(forServiceType: SLServiceTypeTwitter)
+        // socialController.addImage() WHAT IS THE IMAGE
+        // socialController.addURL()    WHAT IS THE URL
         
-        self.presentViewController(shareToTwitter, animated: true, completion: nil)
+        self.presentViewController(socialController, animated: true, completion: nil)
             
         }
         
         //Don't put anything after Message due to "Default: break" for precausion
         
-        @IBAction func sendMessage(sender: AnyObject) {
+        func sendMessage(sender: AnyObject) {
             let messageVC = MFMessageComposeViewController ()
             
             messageVC.body = "Enter a message";
@@ -104,4 +104,5 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         
     }
     
-
+}
+}
