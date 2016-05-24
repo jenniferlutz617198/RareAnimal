@@ -4,8 +4,7 @@
 // hi
 //  Created by student3 on 5/2/16.
 //  Copyright © 2016 JohnHerseyHighSchool. All rights reserved.
-//
-
+//  https://developer.apple.com/library/ios/documentation/UIKit/Reference/UIKitFunctionReference/index.html#//apple_ref/c/func/UIImageWriteToSavedPhotosAlbum
 import UIKit
 import Social
 import MessageUI
