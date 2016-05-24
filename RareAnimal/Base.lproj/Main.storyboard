@@ -48,22 +48,16 @@
                                 <rect key="frame" x="127" y="596" width="160" height="31"/>
                                 <state key="normal" title="Twitter sharing button"/>
                                 <connections>
-                                    <action selector="twitterButtonPushed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RIW-vQ-Ee1"/>
+                                    <action selector="faceBookButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Quy-j8-kcx"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wEb-3e-v4m">
                                 <rect key="frame" x="105" y="403" width="205" height="51"/>
                                 <state key="normal" title="Share photo on Facebook"/>
-                                <connections>
-                                    <action selector="sharePhotoToFacebook:" destination="BYZ-38-t0r" eventType="touchUpInside" id="g79-sk-nY6"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aEF-hC-zQ1">
                                 <rect key="frame" x="163" y="679" width="89" height="30"/>
                                 <state key="normal" title="Text a Friend"/>
-                                <connections>
-                                    <action selector="sendMessage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FXT-zy-nfr"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nuw-rI-qf5">
                                 <rect key="frame" x="71" y="635" width="272" height="36"/>

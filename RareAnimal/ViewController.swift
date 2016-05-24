@@ -55,25 +55,26 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     }
     @IBAction func faceBookButtonPressed(sender: UIButton) {
         if(SLComposeViewController.isAvailableForServiceType(SLServiceTypeFacebook)){
-        let socialController = SLComposeViewController(forServiceType: SLServiceTypeFacebook)
-         //socialController.addImage() Look up what to put the image to be
-         //socialController.addURL()   Look up the URL
+            let socialController = SLComposeViewController(forServiceType: SLServiceTypeFacebook)
+            //socialController.addImage() Look up what to put the image to be
+            //socialController.addURL()   Look up the URL
+            
+            self.presentViewController(socialController, animated: true, completion: nil)
+        }
         
-        self.presentViewController(socialController, animated: true, completion: nil)
-    }
-
-    @IBAction func twitterButtonPushed(sender: UIButton) {
-        
-        let socilaController = SLComposeViewController(forServiceType: SLServiceTypeTwitter)
-        // socialController.addImage()
-        // socialController.addURL()
-        
-        self.presentViewController(shareToTwitter, animated: true, completion: nil)
+        if(SLComposeViewController.isAvailableForServiceType(SLServiceTypeFacebook)){
+            if(SLComposeViewController.isAvailableForServiceType(SLServiceTypeFacebook)){
+            let socilaController = SLComposeViewController(forServiceType: SLServiceTypeTwitter)
+            // socialController.addImage()
+            // socialController.addURL()
+            
+            self.presentViewController(socilaController, animated: true, completion: nil)
             
         }
         
         //Don't put anything after Message due to "Default: break" for precausion
-        
+        }
+    }
         @IBAction func sendMessage(sender: AnyObject) {
             let messageVC = MFMessageComposeViewController ()
             
