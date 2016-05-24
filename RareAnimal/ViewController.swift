@@ -62,19 +62,19 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         self.presentViewController(socialController, animated: true, completion: nil)
     }
 
-    func twitterButtonPushed(sender: UIButton) {
-        if(SLComposeViewController.isAvailableForServiceType(SLServiceTypeTwitter)){
-        let socialController = SLComposeViewController(forServiceType: SLServiceTypeTwitter)
-        // socialController.addImage() WHAT IS THE IMAGE
-        // socialController.addURL()    WHAT IS THE URL
+    @IBAction func twitterButtonPushed(sender: UIButton) {
         
-        self.presentViewController(socialController, animated: true, completion: nil)
+        let socilaController = SLComposeViewController(forServiceType: SLServiceTypeTwitter)
+        // socialController.addImage()
+        // socialController.addURL()
+        
+        self.presentViewController(shareToTwitter, animated: true, completion: nil)
             
         }
         
         //Don't put anything after Message due to "Default: break" for precausion
         
-        func sendMessage(sender: AnyObject) {
+        @IBAction func sendMessage(sender: AnyObject) {
             let messageVC = MFMessageComposeViewController ()
             
             messageVC.body = "Enter a message";
@@ -104,5 +104,4 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         
     }
     
-}
-}
+
