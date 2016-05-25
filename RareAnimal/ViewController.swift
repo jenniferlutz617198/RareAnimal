@@ -15,6 +15,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     var currentImage: UIImage!
     var picker = UIImagePickerController()
     var photos = [UIImage]()
+        var count = 0
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,7 +23,31 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         self.picker.allowsEditing = true
         title = "Rare Animal"
         
+        NSTimer.scheduledTimerWithTimeInterval(5.0, target: self, selector: #selector(ViewController.animatedImage), userInfo: nil, repeats: true)
         
+    }
+    
+    func animatedImage()
+    {
+        if self.photos.count > 0 {
+            if self.count < self.photos.count - 1 && self.photos.count != 1 {
+                self.count += 1
+            } else {
+                self.count = 0
+            }
+            
+            UIView.animateWithDuration(1.0, delay: 0.0, options: .CurveEaseIn, animations: { () -> Void in
+                self.myImageView.alpha = 0.0
+                }, completion: { (finished) -> Void in
+                    self.myImageView.image = self.photos[self.count]
+                    UIView.animateWithDuration(1.0, delay: 0.0, options: .CurveEaseOut, animations: { () -> Void in
+                        self.myImageView.alpha = 1.0
+                        }, completion: { (finished) -> Void in
+                            
+                    })
+            })
+            
+        }
     }
 
     
