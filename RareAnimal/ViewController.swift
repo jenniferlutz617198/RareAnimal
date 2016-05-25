@@ -22,8 +22,10 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         self.picker.allowsEditing = true
         title = "Rare Animal"
         
+        
+    }
     
-        }
+    
     func imagePickerControllerDidCancel(picker: UIImagePickerController) {
         picker.dismissViewControllerAnimated(true, completion: nil)
     }
@@ -35,8 +37,8 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
 
     
     
-
-
+    
+    
     @IBAction func onTapped(sender: UIButton) {
         let actionsheet = UIAlertController(title: "Select image", message: nil, preferredStyle: .ActionSheet)
         actionsheet.popoverPresentationController?.sourceView = self.view
