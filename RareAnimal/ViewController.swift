@@ -14,28 +14,35 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     @IBOutlet weak var myImageView: UIImageView!
     var currentImage: UIImage!
     var picker = UIImagePickerController()
+    var photos = [UIImage]()
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        picker.delegate = self
+        self.picker.delegate = self
+        self.picker.allowsEditing = true
         title = "Rare Animal"
-        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .Add, target: self, action: #selector(importPicture))
+        
         
     }
+    
+        
+    
 
-    func importPicture() {
-        let picker = UIImagePickerController()
-        picker.allowsEditing = true
-        picker.delegate = self
-        presentViewController(picker, animated: true, completion: nil)
-        
-    }
+    
+    
     func imagePickerControllerDidCancel(picker: UIImagePickerController) {
         picker.dismissViewControllerAnimated(true, completion: nil)
     }
+    func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : AnyObject]) {
+        self.picker.dismissViewControllerAnimated(true) { () -> Void in
+            self.photos.append(info[UIImagePickerControllerEditedImage] as! UIImage)
+        }
+    }
+
     
     
-    
-    
+
+
     @IBAction func onTapped(sender: UIButton) {
         let actionsheet = UIAlertController(title: "Select image", message: nil, preferredStyle: .ActionSheet)
         actionsheet.popoverPresentationController?.sourceView = self.view
@@ -108,6 +115,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
             
         }
     
-    }
+    
     
 
+}
