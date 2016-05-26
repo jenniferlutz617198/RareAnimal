@@ -59,6 +59,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         self.picker.dismissViewControllerAnimated(true) { () -> Void in
             self.photos.append(info[UIImagePickerControllerEditedImage] as! UIImage)
         }
+  
     }
 
     

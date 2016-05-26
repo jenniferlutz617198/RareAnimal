@@ -140,6 +140,7 @@
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                     <connections>
+                        <outlet property="ActivityIndicator" destination="XFf-pF-1Bq" id="4Ev-vw-dRz"/>
                         <outlet property="myWebView" destination="Bjm-9w-lUj" id="Sdq-bO-Mj1"/>
                     </connections>
                 </viewController>

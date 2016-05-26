@@ -12,7 +12,9 @@ import Social
 class webViewController: UIViewController {
     
     @IBOutlet weak var myWebView: UIWebView!
+    @IBOutlet weak var ActivityIndicator: UIActivityIndicatorView!
     override func viewDidLoad() {
+        ActivityIndicator.hidesWhenStopped = true
         super.viewDidLoad()
         
         myWebView.loadRequest(NSURLRequest(URL: NSURL(string: "http://ctrlq.org/google/images/")!))
@@ -23,7 +25,5 @@ class webViewController: UIViewController {
             -> Void in
         }
     }
-    
-    
 }
 
