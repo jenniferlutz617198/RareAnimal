@@ -23,7 +23,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         self.picker.allowsEditing = true
         title = "Rare Animal"
         
-        NSTimer.scheduledTimerWithTimeInterval(5.0, target: self, selector: #selector(ViewController.animatedImage), userInfo: nil, repeats: true)
+        NSTimer.scheduledTimerWithTimeInterval(1.0, target: self, selector: #selector(ViewController.animatedImage), userInfo: nil, repeats: true)
         
     }
     
@@ -37,7 +37,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
             }
             
             UIView.animateWithDuration(1.0, delay: 0.0, options: .CurveEaseIn, animations: { () -> Void in
-                self.myImageView.alpha = 0.0
+                self.myImageView.alpha = 1.0
                 }, completion: { (finished) -> Void in
                     self.myImageView.image = self.photos[self.count]
                     UIView.animateWithDuration(1.0, delay: 0.0, options: .CurveEaseOut, animations: { () -> Void in
