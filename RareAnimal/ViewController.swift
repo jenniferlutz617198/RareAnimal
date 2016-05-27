@@ -8,8 +8,13 @@
 import UIKit
 import Social
 import MessageUI
+import FBSDKCoreKit
+import FBSDKLoginKit
+import FBSDKShareKit
 
-class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate, MFMessageComposeViewControllerDelegate {
+
+class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate, MFMessageComposeViewControllerDelegate,FBSDKLoginButtonDelegate
+{
     
     @IBOutlet weak var myImageView: UIImageView!
     var currentImage: UIImage!
@@ -85,15 +90,12 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         
     }
     @IBAction func faceBookButtonPressed(sender: UIButton) {
-        if(SLComposeViewController.isAvailableForServiceType(SLServiceTypeFacebook)){
-            let socialController = SLComposeViewController(forServiceType: SLServiceTypeFacebook)
-            //socialController.addImage() Look up what to put the image to be
-            //socialController.addURL()   Look up the URL
-            
-            self.presentViewController(socialController, animated: true, completion: nil)
-        }
-        
-    }
+        let content: FBSDKShareLinkContent = FBSDKShareLinkContent()
+        content.contentURL = NSURL(string: self.contentURL)
+        content.contentTitle = self.contentTitle
+        content.contentDescription = self.contentDescription
+        content.imageURL = NSURL(string: self.contentURLImage)
+        FBSDKShareDialog.showFromViewController(self, withContent: content, delegate: nil)}
     @IBAction func twitterButtonPushed(sender: UIButton) {
         if(SLComposeViewController.isAvailableForServiceType(SLServiceTypeTwitter)){
             let socialController = SLComposeViewController(forServiceType: SLServiceTypeTwitter)
