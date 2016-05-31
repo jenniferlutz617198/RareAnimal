@@ -24,6 +24,14 @@ class webViewController: UIViewController {
         dismissViewControllerAnimated(true) { ()
             -> Void in
         }
+        
+        func webViewDidStartLoad(webView: UIWebView) {
+            ActivityIndicator.startAnimating()
+        }
+        
+        func webViewDidFinishLoad(webView: UIWebView) {
+            ActivityIndicator.stopAnimating()
+        }
     }
 }
 
