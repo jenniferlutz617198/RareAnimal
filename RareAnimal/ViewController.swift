@@ -9,7 +9,9 @@ import UIKit
 import Social
 import MessageUI
 
-class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate, MFMessageComposeViewControllerDelegate {
+
+class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate, MFMessageComposeViewControllerDelegate
+{
     
     @IBOutlet weak var myImageView: UIImageView!
     var currentImage: UIImage!
@@ -85,19 +87,17 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         
     }
     @IBAction func faceBookButtonPressed(sender: UIButton) {
-        if(SLComposeViewController.isAvailableForServiceType(SLServiceTypeFacebook)){
+    if(SLComposeViewController.isAvailableForServiceType(SLServiceTypeFacebook)){
             let socialController = SLComposeViewController(forServiceType: SLServiceTypeFacebook)
-            //socialController.addImage() Look up what to put the image to be
-            //socialController.addURL()   Look up the URL
-            
-            self.presentViewController(socialController, animated: true, completion: nil)
-        }
+            socialController.addImage(myImageView.image)
         
+        self.presentViewController(socialController, animated: true, completion: nil)
+        }
     }
-    @IBAction func twitterButtonPushed(sender: UIButton) {
+        @IBAction func twitterButtonPushed(sender: UIButton) {
         if(SLComposeViewController.isAvailableForServiceType(SLServiceTypeTwitter)){
             let socialController = SLComposeViewController(forServiceType: SLServiceTypeTwitter)
-            //socialController.addImage() Look up what to put the image to be
+            socialController.addImage(myImageView.image)
             //socialController.addURL()   Look up the URL
             
             self.presentViewController(socialController, animated: true, completion: nil)
