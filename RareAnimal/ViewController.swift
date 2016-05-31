@@ -17,8 +17,8 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     var currentImage: UIImage!
     var picker = UIImagePickerController()
     var photos = [UIImage]()
-        var count = 0
-
+    var count = 0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.picker.delegate = self
@@ -51,7 +51,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
             
         }
     }
-
+    
     
     
     func imagePickerControllerDidCancel(picker: UIImagePickerController) {
@@ -61,9 +61,9 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         self.picker.dismissViewControllerAnimated(true) { () -> Void in
             self.photos.append(info[UIImagePickerControllerEditedImage] as! UIImage)
         }
-  
+        
     }
-
+    
     
     
     
@@ -87,59 +87,59 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         
     }
     @IBAction func faceBookButtonPressed(sender: UIButton) {
-    if(SLComposeViewController.isAvailableForServiceType(SLServiceTypeFacebook)){
+        if(SLComposeViewController.isAvailableForServiceType(SLServiceTypeFacebook)){
             let socialController = SLComposeViewController(forServiceType: SLServiceTypeFacebook)
             socialController.addImage(myImageView.image)
-        
-        self.presentViewController(socialController, animated: true, completion: nil)
+            
+            self.presentViewController(socialController, animated: true, completion: nil)
         }
     }
-        @IBAction func twitterButtonPushed(sender: UIButton) {
+    @IBAction func twitterButtonPushed(sender: UIButton) {
         if(SLComposeViewController.isAvailableForServiceType(SLServiceTypeTwitter)){
             let socialController = SLComposeViewController(forServiceType: SLServiceTypeTwitter)
             socialController.addImage(myImageView.image)
             //socialController.addURL()   Look up the URL
             
             self.presentViewController(socialController, animated: true, completion: nil)
-
+            
+            
+        }
         
+        }
+
+
+        //Don't put anything after Message due to "Default: break" for precausion
+    
+    
+    @IBAction func sendMessage(sender: AnyObject) {
+        let messageVC = MFMessageComposeViewController ()
+        
+        messageVC.body = "Enter a message";
+        messageVC.recipients = ["Enter number"]
+        messageVC.messageComposeDelegate = self;
+        
+        self.presentViewController(messageVC, animated: false, completion: nil)
     }
 
-
-    
+    func messageComposeViewController(controller: MFMessageComposeViewController, didFinishWithResult result: MessageComposeResult) {
+        switch (result.rawValue) {
+        case MessageComposeResultCancelled.rawValue:
+            print("Message was cancelled")
+            self.dismissViewControllerAnimated(true, completion: nil)
+        case MessageComposeResultFailed.rawValue:
+            print("Message failed")
+            self.dismissViewControllerAnimated(true, completion: nil)
+        case MessageComposeResultSent.rawValue:
+            print("Message was sent")
+            self.dismissViewControllerAnimated(true, completion: nil)
+        default: break
+            
+            
+        }
         
-        //Don't put anything after Message due to "Default: break" for precausion
-        }
-    
-        @IBAction func sendMessage(sender: AnyObject) {
-            let messageVC = MFMessageComposeViewController ()
-            
-            messageVC.body = "Enter a message";
-            messageVC.recipients = ["Enter number"]
-            messageVC.messageComposeDelegate = self;
-            
-            self.presentViewController(messageVC, animated: false, completion: nil)
-        }
-        
-        func messageComposeViewController(controller: MFMessageComposeViewController, didFinishWithResult result: MessageComposeResult) {
-            switch (result.rawValue) {
-            case MessageComposeResultCancelled.rawValue:
-                print("Message was cancelled")
-                self.dismissViewControllerAnimated(true, completion: nil)
-            case MessageComposeResultFailed.rawValue:
-                print("Message failed")
-                self.dismissViewControllerAnimated(true, completion: nil)
-            case MessageComposeResultSent.rawValue:
-                print("Message was sent")
-                self.dismissViewControllerAnimated(true, completion: nil)
-            default: break
-                
-                
-            }
-            
-        }
+    }
     
     
     
-
+    
 }
