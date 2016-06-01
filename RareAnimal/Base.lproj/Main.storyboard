@@ -106,7 +106,12 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
                                 <items>
                                     <navigationItem id="nWx-2P-kbE">
-                                        <barButtonItem key="leftBarButtonItem" title="Dismiss" id="HlO-rT-1gd">
+                                        <barButtonItem key="leftBarButtonItem" title="Back" id="nXP-g9-s7z">
+                                            <connections>
+                                                <action selector="goBack:" destination="bTt-UD-uXL" id="edK-DP-a1o"/>
+                                            </connections>
+                                        </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" title="Dismiss" id="HlO-rT-1gd">
                                             <connections>
                                                 <action selector="dismissBarButton:" destination="bTt-UD-uXL" id="FXp-Uf-jNQ"/>
                                             </connections>
@@ -122,7 +127,7 @@
                                     <constraint firstAttribute="width" constant="414" id="Uyd-3J-3zi"/>
                                 </constraints>
                             </webView>
-                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" hidesWhenStopped="YES" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="XFf-pF-1Bq">
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="XFf-pF-1Bq">
                                 <rect key="frame" x="374" y="16" width="20" height="20"/>
                                 <color key="color" red="0.0" green="0.25584626677852351" blue="0.1564618905448085" alpha="1" colorSpace="calibratedRGB"/>
                             </activityIndicatorView>
@@ -136,10 +141,14 @@
                             <constraint firstItem="Bjm-9w-lUj" firstAttribute="leading" secondItem="Inr-Z6-juZ" secondAttribute="leadingMargin" constant="-20" id="jPJ-KT-Tlb"/>
                             <constraint firstItem="eAU-eb-Wie" firstAttribute="leading" secondItem="Inr-Z6-juZ" secondAttribute="leadingMargin" constant="-20" id="y9B-aD-Ird"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="XFf-pF-1Bq"/>
+                            </mask>
+                        </variation>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                     <connections>
-                        <outlet property="ActivityIndicator" destination="XFf-pF-1Bq" id="4Ev-vw-dRz"/>
                         <outlet property="myWebView" destination="Bjm-9w-lUj" id="Sdq-bO-Mj1"/>
                     </connections>
                 </viewController>

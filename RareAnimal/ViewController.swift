@@ -26,7 +26,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         title = "Rare Animal"
         
         NSTimer.scheduledTimerWithTimeInterval(1.0, target: self, selector: #selector(ViewController.animatedImage), userInfo: nil, repeats: true)
-        
+
     }
     
     func animatedImage()
@@ -137,9 +137,23 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
             
         }
         
+        func messageComposeViewController(controller: MFMessageComposeViewController, didFinishWithResult result: MessageComposeResult) {
+            switch (result.rawValue) {
+            case MessageComposeResultCancelled.rawValue:
+                print("Message was cancelled")
+                self.dismissViewControllerAnimated(true, completion: nil)
+            case MessageComposeResultFailed.rawValue:
+                print("Message failed")
+                self.dismissViewControllerAnimated(true, completion: nil)
+            case MessageComposeResultSent.rawValue:
+                print("Message was sent")
+                self.dismissViewControllerAnimated(true, completion: nil)
+            default: break
+                
+                
+            }
+            UIImageWriteToSavedPhotosAlbum(currentImage, nil, nil, nil);
+        }
+   
     }
-    
-    
-    
-    
 }
