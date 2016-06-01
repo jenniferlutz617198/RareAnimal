@@ -26,7 +26,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         title = "Rare Animal"
         
         NSTimer.scheduledTimerWithTimeInterval(1.0, target: self, selector: #selector(ViewController.animatedImage), userInfo: nil, repeats: true)
-        
+
     }
     
     func animatedImage()
@@ -136,7 +136,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
                 
                 
             }
-            
+            UIImageWriteToSavedPhotosAlbum(currentImage, nil, nil, nil);
         }
     
     
