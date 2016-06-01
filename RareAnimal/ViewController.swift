@@ -154,7 +154,6 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
             }
             UIImageWriteToSavedPhotosAlbum(currentImage, nil, nil, nil);
         }
-    
-    
-    
+   
+    }
 }
