@@ -14,11 +14,25 @@ class webViewController: UIViewController {
     @IBOutlet weak var myWebView: UIWebView!
     @IBOutlet weak var ActivityIndicator: UIActivityIndicatorView!
     override func viewDidLoad() {
-        ActivityIndicator.hidesWhenStopped = true
         super.viewDidLoad()
         
+        func webviewDidStartLoad(_ : UIWebView){
+            ActivityIndicator.startAnimating()
+            
+            NSLog("The webview is starting to load")
+        }
         myWebView.loadRequest(NSURLRequest(URL: NSURL(string: "http://ctrlq.org/google/images/")!))
-        
+    }
+    
+    func webviewDidFinishLoad(_ : UIWebView){
+        ActivityIndicator.stopAnimating()
+        ActivityIndicator.hidden=true;
+        NSLog("The webview is done loading")
+    }
+    func webView(webView: UIWebView!, didFailLoadWithError error: NSError!) {
+        ActivityIndicator.stopAnimating()
+        ActivityIndicator.hidden=true;
+        print("Webview fail with error \(error)");
     }
     @IBAction func dismissBarButton(sender: UIBarButtonItem) {
         dismissViewControllerAnimated(true) { ()
@@ -33,5 +47,6 @@ class webViewController: UIViewController {
             ActivityIndicator.stopAnimating()
         }
     }
+    
+    
 }
-
