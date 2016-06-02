@@ -121,7 +121,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         messageVC.messageComposeDelegate = self;
         
         self.presentViewController(messageVC, animated: false, completion: nil)
-                
+        
         }
         
         func messageComposeViewController(controller: MFMessageComposeViewController, didFinishWithResult result: MessageComposeResult) {
