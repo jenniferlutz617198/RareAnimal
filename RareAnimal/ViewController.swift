@@ -69,14 +69,14 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     
     
     @IBAction func onTapped(sender: UIButton) {
-        let actionsheet = UIAlertController(title: "Select image", message: nil, preferredStyle: .ActionSheet)
+        let actionsheet = UIAlertController(title: "Select Image", message: nil, preferredStyle: .ActionSheet)
         actionsheet.popoverPresentationController?.sourceView = self.view
         actionsheet.popoverPresentationController?.sourceRect = CGRect(x: 0, y: self.view.frame.height, width: self.view.frame.width, height: 100)
-        let libraryButton = UIAlertAction(title: "photo library", style: .Default) { (action) -> Void in
+        let libraryButton = UIAlertAction(title: "Photo Library", style: .Default) { (action) -> Void in
             self.picker.sourceType = UIImagePickerControllerSourceType.PhotoLibrary
             self.presentViewController(self.picker, animated: true, completion: nil)
         }
-        let cameraButton = UIAlertAction(title: "camera", style: .Default) { (action) -> Void in
+        let cameraButton = UIAlertAction(title: "Camera", style: .Default) { (action) -> Void in
             self.picker.sourceType = UIImagePickerControllerSourceType.Camera
             self.presentViewController(self.picker, animated: false, completion: nil)
         }
@@ -121,22 +121,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         messageVC.messageComposeDelegate = self;
         
         self.presentViewController(messageVC, animated: false, completion: nil)
-    }
-
-    func messageComposeViewController(controller: MFMessageComposeViewController, didFinishWithResult result: MessageComposeResult) {
-        switch (result.rawValue) {
-        case MessageComposeResultCancelled.rawValue:
-            print("Message was cancelled")
-            self.dismissViewControllerAnimated(true, completion: nil)
-        case MessageComposeResultFailed.rawValue:
-            print("Message failed")
-            self.dismissViewControllerAnimated(true, completion: nil)
-        case MessageComposeResultSent.rawValue:
-            print("Message was sent")
-            self.dismissViewControllerAnimated(true, completion: nil)
-        default: break
-            
-            
+                
         }
         
         func messageComposeViewController(controller: MFMessageComposeViewController, didFinishWithResult result: MessageComposeResult) {
@@ -158,4 +143,3 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         }
    
     }
-}
