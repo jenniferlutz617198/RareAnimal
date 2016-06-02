@@ -41,13 +41,6 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ALB-Gg-h3k">
                                 <rect key="frame" x="17" y="85" width="380" height="310"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aEF-hC-zQ1">
-                                <rect key="frame" x="163" y="679" width="89" height="30"/>
-                                <state key="normal" title="Text a Friend"/>
-                                <connections>
-                                    <action selector="sendMessage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YRn-fx-0Cl"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nuw-rI-qf5">
                                 <rect key="frame" x="71" y="635" width="272" height="36"/>
                                 <state key="normal" title="Facebook sharing button only by text"/>
@@ -60,6 +53,13 @@
                                 <state key="normal" title="Twitter sharing button"/>
                                 <connections>
                                     <action selector="twitterButtonPushed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="a2V-eh-wFC"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aEF-hC-zQ1">
+                                <rect key="frame" x="163" y="579" width="89" height="30"/>
+                                <state key="normal" title="Text a Friend"/>
+                                <connections>
+                                    <action selector="sendMessage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YRn-fx-0Cl"/>
                                 </connections>
                             </button>
                         </subviews>
