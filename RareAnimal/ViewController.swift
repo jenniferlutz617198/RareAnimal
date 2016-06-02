@@ -80,11 +80,13 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
             self.picker.sourceType = UIImagePickerControllerSourceType.Camera
             self.presentViewController(self.picker, animated: false, completion: nil)
         }
+        let cancelbutton = UIAlertAction(title: "Cancel", style: .Cancel) { (action) -> Void in
+        }
         actionsheet.addAction(libraryButton)
         actionsheet.addAction(cameraButton)
+        actionsheet.addAction(cancelbutton)
         
         presentViewController(actionsheet, animated: true, completion: nil)
-        
     }
     @IBAction func faceBookButtonPressed(sender: UIButton) {
         if(SLComposeViewController.isAvailableForServiceType(SLServiceTypeFacebook)){
