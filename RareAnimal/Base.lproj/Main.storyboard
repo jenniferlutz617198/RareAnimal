@@ -18,8 +18,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Lo-ij-LAc">
-                                <rect key="frame" x="88" y="468" width="238" height="41"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Lo-ij-LAc">
+                                <rect key="frame" x="88" y="440" width="238" height="41"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <state key="normal" title="Take or Select a Photo">
                                     <color key="titleColor" red="0.36775501240000003" green="0.7088141026" blue="0.4504169804" alpha="1" colorSpace="calibratedRGB"/>
@@ -28,8 +28,47 @@
                                     <action selector="onTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hyJ-Qj-Nod"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9rE-Kq-fJJ">
-                                <rect key="frame" x="88" y="522" width="238" height="30"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ALB-Gg-h3k">
+                                <rect key="frame" x="17" y="85" width="380" height="310"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="310" id="Nt4-e2-B0f"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nuw-rI-qf5">
+                                <rect key="frame" x="236" y="580" width="45" height="47"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="45" id="8hy-uM-M6U"/>
+                                    <constraint firstAttribute="height" constant="47" id="Cha-Lh-h5d"/>
+                                </constraints>
+                                <state key="normal" title="Facebook sharing button only by text" image="Facebook_logo-7"/>
+                                <connections>
+                                    <action selector="faceBookButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="el7-m8-76a"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6dV-hF-ODD">
+                                <rect key="frame" x="129" y="580" width="53" height="43"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="43" id="Gp8-5D-bax"/>
+                                    <constraint firstAttribute="width" constant="53" id="n8c-2i-fIW"/>
+                                </constraints>
+                                <state key="normal" title="Twitter sharing button" image="Twitter_logo_blue"/>
+                                <connections>
+                                    <action selector="twitterButtonPushed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="a2V-eh-wFC"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aEF-hC-zQ1">
+                                <rect key="frame" x="-15" y="681" width="101" height="47"/>
+                                <state key="normal" title="Text a Friend" image="triple-nav-messages"/>
+                                <connections>
+                                    <action selector="sendMessage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YRn-fx-0Cl"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9rE-Kq-fJJ">
+                                <rect key="frame" x="88" y="503" width="238" height="39"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="39" id="JJM-kC-WQi"/>
+                                    <constraint firstAttribute="width" constant="238" id="Lqg-O9-uhl"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                 <state key="normal" title="Discover Your Animal">
                                     <color key="titleColor" red="0.36775501240522407" green="0.7088141025641026" blue="0.45041698035396593" alpha="1" colorSpace="calibratedRGB"/>
@@ -38,36 +77,25 @@
                                     <segue destination="bTt-UD-uXL" kind="presentation" identifier="toWebView" modalTransitionStyle="flipHorizontal" id="nUp-lF-tSd"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ALB-Gg-h3k">
-                                <rect key="frame" x="17" y="85" width="380" height="310"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nuw-rI-qf5">
-                                <rect key="frame" x="71" y="635" width="272" height="36"/>
-                                <state key="normal" title="Facebook sharing button only by text"/>
-                                <connections>
-                                    <action selector="faceBookButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="el7-m8-76a"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6dV-hF-ODD">
-                                <rect key="frame" x="127" y="606" width="160" height="31"/>
-                                <state key="normal" title="Twitter sharing button"/>
-                                <connections>
-                                    <action selector="twitterButtonPushed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="a2V-eh-wFC"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aEF-hC-zQ1">
-                                <rect key="frame" x="163" y="579" width="89" height="30"/>
-                                <state key="normal" title="Text a Friend"/>
-                                <connections>
-                                    <action selector="sendMessage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YRn-fx-0Cl"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="ALB-Gg-h3k" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="d79-qc-3Lu"/>
-                            <constraint firstItem="ALB-Gg-h3k" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-3" id="fE3-hz-cvI"/>
-                            <constraint firstItem="ALB-Gg-h3k" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="21" id="piw-eN-wqO"/>
+                            <constraint firstItem="ALB-Gg-h3k" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-3" id="1HL-Zm-tgd"/>
+                            <constraint firstItem="ALB-Gg-h3k" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="21" id="2Bp-WQ-eoM"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="nuw-rI-qf5" secondAttribute="trailing" constant="113" id="4yA-pR-sdA"/>
+                            <constraint firstItem="9rE-Kq-fJJ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="68" id="Ch8-Wa-aac"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="aEF-hC-zQ1" secondAttribute="bottom" constant="8" id="E1J-WO-lDx"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="5Lo-ij-LAc" secondAttribute="trailing" constant="68" id="KM3-t8-YsQ"/>
+                            <constraint firstItem="aEF-hC-zQ1" firstAttribute="top" secondItem="ALB-Gg-h3k" secondAttribute="bottom" constant="286" id="MRU-n2-V04"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="aEF-hC-zQ1" secondAttribute="trailing" constant="308" id="ZN3-fn-qO5"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="6dV-hF-ODD" secondAttribute="bottom" constant="113" id="baB-w6-663"/>
+                            <constraint firstItem="6dV-hF-ODD" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="109" id="fO9-MY-vDw"/>
+                            <constraint firstItem="5Lo-ij-LAc" firstAttribute="top" secondItem="ALB-Gg-h3k" secondAttribute="bottom" constant="45" id="fcD-ow-fXm"/>
+                            <constraint firstItem="9rE-Kq-fJJ" firstAttribute="top" secondItem="5Lo-ij-LAc" secondAttribute="bottom" constant="22" id="g2c-KO-hb0"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="nuw-rI-qf5" secondAttribute="bottom" constant="109" id="n05-Bq-VPm"/>
+                            <constraint firstItem="5Lo-ij-LAc" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="68" id="udc-ua-A45"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ALB-Gg-h3k" secondAttribute="trailing" constant="-3" id="yWH-WW-BkS"/>
+                            <constraint firstItem="aEF-hC-zQ1" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-35" id="zQ5-8g-hWH"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="2gW-09-zTm"/>
@@ -165,4 +193,9 @@
             <point key="canvasLocation" x="317" y="349"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Facebook_logo-7" width="1147" height="1147"/>
+        <image name="Twitter_logo_blue" width="1139" height="926"/>
+        <image name="triple-nav-messages" width="760" height="368"/>
+    </resources>
 </document>
