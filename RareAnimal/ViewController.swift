@@ -79,7 +79,6 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         let cameraButton = UIAlertAction(title: "Camera", style: .Default) { (action) -> Void in
             self.picker.sourceType = UIImagePickerControllerSourceType.Camera
             self.presentViewController(self.picker, animated: false, completion: nil)
-            UIImageWriteToSavedPhotosAlbum(self.currentImage, nil, nil, nil);
         }
         let cancelbutton = UIAlertAction(title: "Cancel", style: .Cancel) { (action) -> Void in
         }
@@ -140,5 +139,5 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
                 
                 
             }
-    }
+        }
 }
