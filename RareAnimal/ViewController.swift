@@ -25,7 +25,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         self.picker.allowsEditing = true
         title = "Rare Animal"
         
-        NSTimer.scheduledTimerWithTimeInterval(1.0, target: self, selector: #selector(ViewController.animatedImage), userInfo: nil, repeats: true)
+        NSTimer.scheduledTimerWithTimeInterval(10.0, target: self, selector: #selector(ViewController.animatedImage), userInfo: nil, repeats: true)
 
     }
     
@@ -139,5 +139,13 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
                 
                 
             }
+            
+            
+            
         }
-}
+    @IBAction func onTapSaveImage(sender: UIButton) {
+                UIImageWriteToSavedPhotosAlbum(photos.first!, nil, nil, nil);
+            
+        }
+
+    }

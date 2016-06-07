@@ -77,6 +77,16 @@
                                     <segue destination="bTt-UD-uXL" kind="presentation" identifier="toWebView" modalTransitionStyle="flipHorizontal" id="nUp-lF-tSd"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9gd-vR-xLg">
+                                <rect key="frame" x="88" y="477" width="238" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="Save Image">
+                                    <color key="titleColor" red="0.36775501240000003" green="0.7088141026" blue="0.4504169804" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="onTapSaveImage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NLK-gR-ElK"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
