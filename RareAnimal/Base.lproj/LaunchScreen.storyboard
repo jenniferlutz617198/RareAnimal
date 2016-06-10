@@ -18,14 +18,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="created by; Jennifer Lutz and Lauren" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7qY-33-ZNZ">
-                                <rect key="frame" x="63" y="201" width="289" height="171"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="1" green="0.0" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XqN-I0-TCa">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XqN-I0-TCa">
                                 <rect key="frame" x="142" y="161" width="131" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="131" id="05v-hj-kui"/>
+                                    <constraint firstAttribute="height" constant="32" id="glK-W4-E2m"/>
+                                </constraints>
                                 <attributedString key="attributedText">
                                     <fragment content="Rare Animal app">
                                         <attributes>
@@ -37,16 +35,25 @@
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vui-mO-JNX">
-                                <rect key="frame" x="87" y="351" width="240" height="128"/>
-                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="created by; Jennifer Lutz and Lauren" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7qY-33-ZNZ">
+                                <rect key="frame" x="63" y="282" width="289" height="171"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="171" id="3In-dW-Hy5"/>
+                                    <constraint firstAttribute="width" constant="289" id="WPg-5G-Etg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="0.0" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstAttribute="trailingMargin" secondItem="vui-mO-JNX" secondAttribute="trailing" constant="67" id="0EO-ON-wsd"/>
-                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="vui-mO-JNX" secondAttribute="bottom" constant="257" id="BXq-Kv-4ha"/>
-                            <constraint firstItem="vui-mO-JNX" firstAttribute="top" secondItem="XqN-I0-TCa" secondAttribute="bottom" constant="158" id="SwD-or-YnQ"/>
-                            <constraint firstItem="vui-mO-JNX" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="67" id="cpW-aB-rLO"/>
+                            <constraint firstItem="XqN-I0-TCa" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="141" id="3KC-m8-EDE"/>
+                            <constraint firstItem="XqN-I0-TCa" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="122" id="8GO-xG-ASM"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="7qY-33-ZNZ" secondAttribute="trailing" constant="42" id="VDt-mX-u18"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="XqN-I0-TCa" secondAttribute="trailing" constant="121" id="hy1-1J-NCK"/>
+                            <constraint firstItem="7qY-33-ZNZ" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="43" id="lEq-xx-VfS"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="7qY-33-ZNZ" secondAttribute="bottom" constant="283" id="scB-9F-Pny"/>
                         </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
